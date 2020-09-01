@@ -7,7 +7,6 @@ const Wrap = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
   top: 0;
   position: relative;
   .datavisualize {display: flex;}

@@ -14,7 +14,7 @@ const Wrap = styled.ul`
   position: relative;
   font-size: 1rem;
 
-  @media all and (max-width:1020px) {
+  @media all and (max-width:1024px) {
     justify-content: flex-start;
     flex-wrap: wrap;
     margin: 0;

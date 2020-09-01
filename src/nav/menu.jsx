@@ -6,7 +6,7 @@ const MenuIcon = styled.ul`
   display: flex;
   flex-direction: column;
   padding: 0;
-  padding-right: 40px;
+  padding-right: 33px;
 
   .icon {
     display: inline-block;
@@ -19,12 +19,11 @@ const MenuIcon = styled.ul`
 
   &:hover .icon {opacity: .6}
 
-
-  @media all and (max-width:1020px) {
+  @media all and (max-width:1024px) {
     padding-right: 20px;
   }
   
-  @media all and (max-width:650px) {
+  @media all and (max-width:768px) {
     padding-right: 0px;
     .icon {width: 30px;}
   }

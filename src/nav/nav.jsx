@@ -31,11 +31,12 @@ const Inner = styled.div`
   a:hover .circle {fill: #E37007;}
   .cake {margin-top: 20px; padding-bottom: 0px; width: 50px;}
   .close:hover div {opacity: .6; transition: all 0.4s ease-out;}
-  .area {margin-top: 210px;}
+  .area {margin-top: 150px;}
 
-  @media all and (max-width:1020px) {
+  @media all and (max-width:1024px) {
     margin-top: 10px;
     .cake {padding-bottom: 50px;}
+    .area {margin-top: 50px;}
   }
 `
 
@@ -49,14 +50,11 @@ const Section = styled.div`
   .sun   {top: 0;     bottom: 0; left: 200px; right: 0;}
   .pen   {top: -10px; bottom: 0; left: -10px; right: 0;}
   .code  {top: 0px;  bottom: 0; left: 530px; right: 0;}
-  .res   {top: 0px; bottom: 0; left: 560px; right: 0;}
-  .chart {top: 0px;   bottom: 0; left: 250px; right: 0; z-index: -2;}
-  .spk   {top: 0px;   bottom: 0; left: 250px; right: 0;}
   
   svg {position:absolute; top: 0; display: block;}
   &:hover svg {display: block;}
 
-  @media all and (max-width:1020px) {
+  @media all and (max-width:1024px) {
     width: 280px;
     padding: 20px 0;
     .ch {height: 50px;}
@@ -72,8 +70,9 @@ const Area = styled.div`
 
   .gsap {opacity: 0;}
   .h {opacity: 0;}
+  p {line-height: 64px;}
   
-  @media all and (max-width:1020px) {
+  @media all and (max-width:1024px) {
     height: 0;
     margin: 0;
     a {text-decoration: underline;}
@@ -121,7 +120,7 @@ export default function nav() {
               <Section>
                 <Area>
                   <p className="h2 gsap" ref={el => {TweenMax.to(el, .4, {opacity: 1, y: -60, ease: Expo.easeOut, delay: .4 })}}>
-                    <a href="https://j.mp/2XwtlH3" target="blank" alt="privateurl">Graphic & UI/UX</a>
+                    <a href="https://j.mp/2XwtlH3" target="blank" alt="private">Graphic & UI/UX</a>
                     <svg className="drawing pen" width="594.822" height="83" viewBox="0 0 594.822 83">
                       <g transform="translate(-368 -286)">
                         <g transform="translate(372 291)" fill="none" stroke="#707070" strokeWidth="1">
@@ -158,9 +157,9 @@ export default function nav() {
               <Section>
                 <Area>
                   <p className="h3 gsap" ref={el => {TweenMax.to(el, .5, {opacity: 1, y: -60, ease: Expo.easeOut, delay: .5 })}}>
-                    <a href="https://j.mp/2XwtlH3" target="blank" alt="privateurl">Resposive Web App</a>
+                    <a href="https://j.mp/2XwtlH3" target="blank" alt="private">Resposive Web App</a>
                     <svg className="drawing code" width="338" height="63" viewBox="0 0 338 63">
-                      <text transform="translate(169 49)" fill="#707070" fontSize="51" fontFamily="JetBrainsMono-Regular, JetBrains Mono"><tspan x="-168.3" y="0"> {} [] () &lt;&gt; </tspan></text>
+                      <text transform="translate(169 49)" fill="#707070" fontSize="51"><tspan x="-168.3" y="0"> {} [] () &lt;&gt; </tspan></text>
                   </svg>
                   </p>
                 </Area>

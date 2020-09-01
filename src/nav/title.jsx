@@ -7,13 +7,9 @@ const Wrap = styled.section`
   justify-content: space-between;
   align-items: center;
   height: 150px;
-  font-size: 50px;
-  p {width: 100%; text-align: center; margin-left: 80px; font-size: 2.2rem;}
-  span {font-size: 1rem;}
 
-  @media all and (max-width:1020px) {
-    p {width: 100%; text-align: left; margin-left: 0px; font-size: 1.875rem;}
-    overflow: hidden;
+  @media all and (max-width:1024px) {
+    height: 100px;
   }
 `
 

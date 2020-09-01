@@ -9,13 +9,14 @@ width: 100%;
 .scrollingBanner {position: relative; width: 100%; height: 100vh; display: flex; overflow: hidden;}
 .scrollingBanner div {position: relative; width: 75%; background: #151515; overflow: hidden;}
 .scrollingBanner div:nth-child(1) {width: 25%; background: url(https://user-images.githubusercontent.com/54713067/87456802-69007400-c642-11ea-80e7-21442c4eaee6.png); background-size: cover;}
-.scrollingBanner div:nth-child(1) h2 a {text-decoration: none; -webkit-text-stroke: 1px; -webkit-text-stroke-color: #fff; -webkit-text-fill-color: transparent; left: 100%;}
-.scrollingBanner div h2 {position: relative;}
-.scrollingBanner div h2 a {text-decoration: none; position: absolute; white-space: nowrap; font-size: 15em; color: #222; line-height: 165vh; animation: animate 60s linear infinite; height: 30%; bottom: 0;}
+.scrollingBanner div:nth-child(1) h2 a {-webkit-text-stroke: 1px; -webkit-text-stroke-color: #fff; -webkit-text-fill-color: transparent; left: 100%;}
+.scrollingBanner div h2 {position: relative; font-family: 'Roboto';}
+.scrollingBanner div h2 a {position: absolute; white-space: nowrap; font-size: 15em; color: #222; line-height: 165vh; animation: animate 60s linear infinite; height: 30%; bottom: 0;}
 .scrollingBanner div h2:hover a {color: #000;}
-.scrollingBanner div:nth-child(1) h2:hover a {text-decoration: none; -webkit-text-stroke: 1px; -webkit-text-stroke-color: #000; -webkit-text-fill-color: transparent; left: 100%;}
+.scrollingBanner div:nth-child(1) h2:hover a {-webkit-text-stroke: 1px; -webkit-text-stroke-color: #000; -webkit-text-fill-color: transparent; left: 100%;}
 
-.left {background: none; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg); color: #bbb; text-align : right; font-size: 1.2rem; position: absolute; top: 320px; left: -250px; z-index: 2;}
+.left {background: none; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg);
+ color: #bbb; text-align : right; font-size: 1.2rem; position: absolute; top: 320px; left: -250px; z-index: 2;}
 .left:hover {opacity: .8;}
 
 .right {position: absolute; top: 35px; right: 40px; z-index: 2; display: flex; align-items: center;}

@@ -12,11 +12,11 @@ const Paper = styled.div`
  background-color: #fff;
  box-shadow: 5px 5px 10px 5px #f1f1f1;
  width: 900px;
- a {color: #333; text-decoration: none;}
+ a {color: #333;}
  img {width: 900px; margin-top: 30px;}
  h2 {margin-top: 50px; text-align: center;}
 
- @media all and (max-width:1020px) {
+ @media all and (max-width:1024px) {
     width: 105%;
     padding: 20px;
     margin: 30px 0;
