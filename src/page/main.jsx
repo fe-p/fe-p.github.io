@@ -10,9 +10,9 @@ const Wrap = styled.div`
 * {margin: 0; padding: 0;}
 width: 100%;
 
-.scrollingBanner {position: relative; width: 100%; height: 100vh; display: flex; overflow: hidden;}
-.scrollingBanner div {position: relative; width: 75%; background: #151515; overflow: hidden;}
-.scrollingBanner div:nth-child(1) {width: 25%; background: url(https://user-images.githubusercontent.com/54713067/87456802-69007400-c642-11ea-80e7-21442c4eaee6.png); background-size: cover;}
+.scrollingBanner {position: relative; width: 100%; height: 100vh; display: flex; overflow: hidden; background: #151515;}
+.scrollingBanner div {position: relative; width: 75%; overflow: hidden; background: url(https://user-images.githubusercontent.com/54713067/91960699-2fe0a800-ed45-11ea-84ae-cb194817d604.png); background-size: 360px 1080px;}
+.scrollingBanner div:nth-child(1) {width: 25%; background: url(https://user-images.githubusercontent.com/54713067/91960665-28b99a00-ed45-11ea-86b1-71d756b39e3e.png); background-size: cover;}
 .scrollingBanner div:nth-child(1) h2 a {-webkit-text-stroke: 1px; -webkit-text-stroke-color: #fff; -webkit-text-fill-color: transparent; left: 100%;}
 .scrollingBanner div h2 {position: relative; font-family: 'Roboto';}
 .scrollingBanner div h2 a {position: absolute; white-space: nowrap; font-size: 15em; color: #222; line-height: 165vh; animation: animate 60s linear infinite; height: 30%; bottom: 0;}
