@@ -89,7 +89,7 @@ export default function nav() {
     <Wrap>
         <Inner>
           <div>
-            <Link to={"/pf"}><img src={require('../image/0.png')} className="cake"/></Link>
+            <Link to={"/"}><img src={require('../image/0.png')} className="cake"/></Link>
             <div className="area">
               <Section>
                 <Area>
