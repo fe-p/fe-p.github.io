@@ -86,11 +86,10 @@ const goBack = () => {
 
 export default function nav() {
   return (
-    <>
-      <Wrap>
+    <Wrap>
         <Inner>
           <div>
-            <Link to={"/main"}><img src={require('../image/0.png')} className="cake"/></Link>
+            <Link to={"/pf"}><img src={require('../image/0.png')} className="cake"/></Link>
             <div className="area">
               <Section>
                 <Area>
@@ -173,6 +172,5 @@ export default function nav() {
         <div>
         </div>
       </Wrap>
-    </>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
-import Index from './page/index';
 import styled from 'styled-components';
+
+import Index from './page/index';
 
 const Wrap = styled.div`
   display: flex;
@@ -16,9 +17,9 @@ const Wrap = styled.div`
 
 function App() {
   return (
-    <Wrap>
-      <Index/>
-    </Wrap>
+      <Wrap>
+        <Index />
+      </Wrap>
   );
 }
 

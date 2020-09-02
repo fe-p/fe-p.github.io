@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route} from "react-router-dom";
+
+import Nav from '../nav/nav';
+import Resume from '../nav/resume';
 
 const Wrap = styled.div`
 * {margin: 0; padding: 0;}
@@ -41,28 +45,40 @@ width: 100%;
 
 export default function main() {
     return (
-      <Wrap>
-        <Link to={"/nav"}>
-          <div className="left">
-            <p>Resume / Graphic Design / Web Design & Publising</p>
-            <p>UIUX WebApp Design / Data visualization & Infographic</p>
-          </div>
-        </Link>
-        <Link to={"/nav"}>
-          <div className="right">
-            <p>2012-2020</p>
-            <span></span>
-          </div>
-        </Link>
-        <section className="scrollingBanner">
-          <div>
-            <h2><Link to={"/nav"}>Interaction designer & Front end developer.</Link></h2>
-          </div>
-          <div>
-            <h2><Link to={"/nav"}>Interaction designer & Front end developer.</Link></h2>
-          </div>
-        </section>
-      </Wrap>
+      <BrowserRouter>
+        <Route
+          render={({ location }) => (
+            <>
+              <Switch location={location}>
+                  <Route path="/nav" component={Nav} />
+                  <Route path="/resume" component={Resume} />
+                  <Wrap>
+                    <Link to={"/nav"}>
+                      <div className="left">
+                        <p>Resume / Graphic Design / Web Design & Publising</p>
+                        <p>UIUX WebApp Design / Data visualization & Infographic</p>
+                      </div>
+                    </Link>
+                    <Link to={"/nav"}>
+                      <div className="right">
+                        <p>2012-2020</p>
+                        <span></span>
+                      </div>
+                    </Link>
+                    <section className="scrollingBanner">
+                      <div>
+                        <h2><Link to={"/nav"}>Interaction designer & Front end developer.</Link></h2>
+                      </div>
+                      <div>
+                        <h2><Link to={"/nav"}>Interaction designer & Front end developer.</Link></h2>
+                      </div>
+                    </section>
+                  </Wrap>
+              </Switch>
+            </>
+          )}
+        />
+      </BrowserRouter>
     );
 }
 
