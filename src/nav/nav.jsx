@@ -49,7 +49,7 @@ const Section = styled.div`
   .drawing {position: absolute; z-index: -2;}
   .sun   {top: 0;     bottom: 0; left: 200px; right: 0;}
   .pen   {top: -10px; bottom: 0; left: -10px; right: 0;}
-  .code  {top: 0px;  bottom: 0; left: 530px; right: 0;}
+  .code  {top: 0px;  bottom: 0; left: 550px; right: 0;}
   
   svg {position:absolute; top: 0; display: block;}
   &:hover svg {display: block;}
@@ -156,7 +156,7 @@ export default function nav() {
               <Section>
                 <Area>
                   <p className="h3 gsap" ref={el => {TweenMax.to(el, .5, {opacity: 1, y: -60, ease: Expo.easeOut, delay: .5 })}}>
-                    <a href="https://j.mp/2XwtlH3" target="blank" alt="private">Resposive Web App</a>
+                    <a href="https://j.mp/2XwtlH3" target="blank" alt="private">Responsive Web App</a>
                     <svg className="drawing code" width="338" height="63" viewBox="0 0 338 63">
                       <text transform="translate(169 49)" fill="#707070" fontSize="51"><tspan x="-168.3" y="0"> {} [] () &lt;&gt; </tspan></text>
                   </svg>

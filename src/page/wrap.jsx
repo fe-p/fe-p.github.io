@@ -9,8 +9,11 @@ const Wrap = styled.div`
  position: relative;
  a {color: #707070;}
 
+ @media all and (max-width:1024px) {
+    a {padding: 5px 10px;}
+ }
  @media all and (max-width:768px) {
-    max-width: 90%;
+    width: 92%;
  }
 `
 

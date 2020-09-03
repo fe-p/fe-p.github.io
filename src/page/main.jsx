@@ -15,12 +15,12 @@ width: 100%;
 .scrollingBanner div:nth-child(1) {width: 25%; background: url(https://user-images.githubusercontent.com/54713067/91960665-28b99a00-ed45-11ea-86b1-71d756b39e3e.png); background-size: cover;}
 .scrollingBanner div:nth-child(1) h2 a {-webkit-text-stroke: 1px; -webkit-text-stroke-color: #fff; -webkit-text-fill-color: transparent; left: 100%;}
 .scrollingBanner div h2 {position: relative; font-family: 'Roboto';}
-.scrollingBanner div h2 a {position: absolute; white-space: nowrap; font-size: 15em; color: #222; line-height: 165vh; animation: animate 60s linear infinite; height: 30%; bottom: 0;}
+.scrollingBanner div h2 a {position: absolute; white-space: nowrap; font-size: 15em; color: #222; line-height: 165vh; animation: animate 60s linear infinite; height: 30%; bottom: 40px;}
 .scrollingBanner div h2:hover a {color: #000;}
 .scrollingBanner div:nth-child(1) h2:hover a {-webkit-text-stroke: 1px; -webkit-text-stroke-color: #000; -webkit-text-fill-color: transparent; left: 100%;}
 
 .left {background: none; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg);
- color: #bbb; text-align : right; font-size: 1.2rem; position: absolute; top: 320px; left: -250px; z-index: 2;}
+ color: #bbb; text-align : right; font-size: 1rem; position: absolute; top: 280px; left: -200px; z-index: 2;}
 .left:hover {opacity: .8;}
 
 .right {position: absolute; top: 35px; right: 40px; z-index: 2; display: flex; align-items: center;}
@@ -67,10 +67,10 @@ export default function main() {
                     </Link>
                     <section className="scrollingBanner">
                       <div>
-                        <h2><Link to={"/nav"}>Interaction designer & Front end developer.</Link></h2>
+                        <h2><Link to={"/nav"}>Interaction designer & Front-end developer.</Link></h2>
                       </div>
                       <div>
-                        <h2><Link to={"/nav"}>Interaction designer & Front end developer.</Link></h2>
+                        <h2><Link to={"/nav"}>Interaction designer & Front-end developer.</Link></h2>
                       </div>
                     </section>
                   </Wrap>

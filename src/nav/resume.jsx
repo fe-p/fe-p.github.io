@@ -26,21 +26,35 @@ const Paper = styled.section`
 
  .my {align-items: center; flex-direction: column; padding: 100px 40px;}
  .my svg {margin-top: 250px;}
+ .my p {line-height: 34px;}
  img {background-color: #ddd; width: 150px; height: 150px; border-radius: 100px; margin-bottom: 50px;}
 
- .title {font-weight: 500; color: #333;}
+ .title {color: #333;}
  .inner {padding-right: 60px; width: calc(100% / 1);}
  .inner ul {margin-top: 30px;}
+ .portfolio .inner ul li {flex-direction: column;}
+ .portfolio .inner ul li a {padding-bottom: 5px;}
+ .edu li p:nth-of-type(2) {padding-left: 10px; display: flex;} 
+ .edu li p:nth-of-type(2) span {padding-left: 10px;}
+
+ .work li p:nth-of-type(2) {padding-left: 10px;}
+ .contactinner ul li p span {padding-left: 10px;}
+ .experience ul li p span {padding-left: 10px;}
+
+ ul li {flex-direction: row;}
+ ul li p:nth-of-type(2) span {padding-left: 10px;}
 
 @media all and (max-width:1024px) {
 width: auto;
 padding: 70px 0;
 margin: 0;
 
-ul {margin-top: 30px;}
-li {margin-top: 5px; font-size: 0.75rem;}
-p {font-size: 0.75rem;}
+.edu li p:nth-of-type(2) {flex-direction: column; width: 250px;}
+.edu li p:nth-of-type(2) span {padding-left: 0px; }
 
+li {margin-top: 5px; font-size: 0.75rem;}
+p {font-size: 0.75rem; letter-spacing: -0.5px; display: flex;}
+span:nth-of-type(2) {padding-left: 14px;}
 article {width: 100%; padding: 40px 10px;}
 
 .inner .title a {font-size: 0.875rem; font-weight: normal; padding-left: 1.1rem; color: #898989;}
@@ -51,7 +65,8 @@ article {width: 100%; padding: 40px 10px;}
 }
 
 @media all and (max-width:768px) {
-ul {width: 90%;}
+ul {padding-left: 0; margin-top: 30px;}
+li {flex-direction: column;}
 .contact h2, .education h2, .experience h2, .skill h2 {width: 100%;}
 
 article {flex-direction: column; padding: 40px 0 40px 10px; margin-left: -5px;}
@@ -67,43 +82,44 @@ article {flex-direction: column; padding: 40px 0 40px 10px; margin-left: -5px;}
 export default function resume() {
 
     const contact = [
-        {id: 1, title: 'Name :', content: 'Lee Erin'},
-        {id: 2, title: 'Email :', content: 'wfedev@gmail.com'},
-        {id: 3, mtitle: 'Address :', mcontent: 'Nakseongdae, Gwanak-gu, Seoul, Republic of Korea'},
-        {id: 4, mtitle: 'Interest :', mcontent: 'Collection of design references'},
-        {id: 5, mtitle: 'Language :', mcontent: 'Korean, English, Javascript'}
+        {id: 1, title: '* Name　:', content: 'Lee Erin'},
+        {id: 2, title: '* Email :', content: 'wfedev@gmail.com'},
     ];
-
+    const contactTwo = [
+        {id: 1, mtitle: '* Address　:', mcontent: 'Nakseongdae, Gwanak-gu, Seoul, Republic of Korea'},
+        {id: 2, mtitle: '* Interest :', mcontent: 'Collection of design references'},
+        {id: 3, mtitle: '* Language :', mcontent: 'Korean, English, Javascript'}
+    ];
     const education = [
-        {id: 1, edu: '2013-2020 University (Dept. of Design)'},
-        {id: 2, edu: '2019 Web developer (Front-end, Back-end, Database)'},
-        {id: 3, edu: '2014 Architecture Construction practice (CAD, 3D visualization)'},
-        {id: 4, edu: '2012 Fashion Design (Pattern drawing, Cloth foundation, Sewing)'}
+        {id: 1, yyyy: '* 2013-2020', edu: 'University', content: '(Dept. of Design)'},
+        {id: 2, yyyy: '# 2019-2019', edu: 'Web developer', content: '(Front-end, Back-end, Database)'},
+        {id: 3, yyyy: '* 2014-2014', edu: 'Architecture Construction practice', content: '(CAD, 3D visualization)'},
+        {id: 4, yyyy: '* 2012-2012', edu: 'Fashion Design', content: '(Pattern drawing, Cloth foundation, Sewing)'}
     ];
 
     const experience = [
-        {id: 1, work: '* 2012-2020 Graphic design'},
-        {id: 2, work: '* 2015-2020 UI/UX design, Publising, front end'},
-        {id: 3, work: '# 2020-2020 Education Archiving Web/App'},
-        {id: 4, work: '# 2020-2020 AI Solution Responsive Web'},
-        {id: 5, work: '# 2020-2020 P2P investment SPA'},
-        {id: 6, work: '# 2017-2019 E-commerce site Web/App'},
-        {id: 7, work: '# 2015-2016 Trading Company responsive Web'},
-        {id: 8, work: '* 2017-2018 Exhibition Visualization'},
-        {id: 9, work: '* 2014-2018 Architectural Visualization'},
-        {id: 10, work: '* 2012-2013 Knit design'}
+        {id: 1,  yyyy: '* 2012-2020', work: 'Graphic design'},
+        {id: 2,  yyyy: '* 2015-2020', work: 'UI/UX design, Publising, front end'},
+        {id: 3,  yyyy: '# 2020-2020', work: 'Education Archiving Web/App'},
+        {id: 4,  yyyy: '# 2020-2020', work: 'AI Solution Responsive Web'},
+        {id: 5,  yyyy: '# 2020-2020', work: 'P2P investment SPA'},
+        {id: 6,  yyyy: '# 2017-2019', work: 'E-commerce site Web/App'},
+        {id: 7,  yyyy: '# 2015-2016', work: 'Trading Company responsive Web'},
+        {id: 8,  yyyy: '* 2017-2018', work: 'Exhibition Visualization'},
+        {id: 9,  yyyy: '* 2014-2018', work: 'Architectural Visualization'},
+        {id: 10, yyyy: '* 2012-2013', work: 'Knit design'}
     ];
 
     const skills = [
-        {id: 1, skill: '* UI : Adobe XD, Figma, Sketch, Zplin'},
-        {id: 2, skill: '* Graphic : Adobe Illustrator, Adobe Photoshop'},
-        {id: 3, skill: '* Motion : Adobe After Effect'},
-        {id: 4, skill: '* 3D : Autodesk 3dsmax, Sketchup, Auto CAD, V-ray'},
-        {id: 5, skill: '# Font-end : JS(ES6+), Jquery, ReactJS, CSS3, HTML5'},
-        {id: 6, skill: '# Back-end : Java(Spring Boot), Nodejs(Express)'},
-        {id: 7, skill: '# DataBase : OracleSQL, MySQL'},
-        {id: 8, skill: '# Version : Github, Bitbuket'},
-        {id: 9, skill: '# Cloud: AWS, GCP'}
+        {id: 1, title: '* UI :', skill: 'Adobe XD, Figma, Sketch, Zplin'},
+        {id: 2, title: '* Graphic :', skill: 'Adobe Illustrator, Adobe Photoshop'},
+        {id: 3, title: '* Motion :', skill: 'Adobe After Effect'},
+        {id: 4, title: '* 3D :', skill: 'Autodesk 3dsmax, Sketchup, Auto CAD, V-ray'},
+        {id: 5, title: '# Font-end :', skill: 'JS(ES6+), Jquery, ReactJS, CSS3, HTML5'},
+        {id: 6, title: '# Back-end :', skill: 'Java(Spring Boot), Nodejs(Express)'},
+        {id: 7, title: '# DataBase :', skill: 'OracleSQL, MySQL'},
+        {id: 8, title: '# Version :', skill: 'Github, Bitbuket'},
+        {id: 9, title: '# Cloud:', skill: 'AWS, GCP'}
     ];
 
     const design = [
@@ -122,7 +138,7 @@ export default function resume() {
         {id: 3, title: 'Wordpress theme', content: 'Photoshop, illustrator를 사용하여 디자인하고 Wordpress와 bootstrap으로 만든 company 웹사이트 입니다.'},
         {id: 4, title: 'Wordpress Custom CSS', content: 'Figma로 받은 디자인을 참고하여 Wordpress를 custom css로 제작한 company 웹사이트 입니다.'},
         {id: 5, title: 'Cafe24', content: 'Photoshop, illustrator를 사용하여 디자인하고 cafe24에 html, css을 작업한 Shopping Mall 입니다.'},
-        {id: 6, title: 'html,css,JS,NodeJS', content: 'XD로 받은 디자인을 참고하여 NodeJS로 Page route를 설정하여 html, css, JS로 web & mobile을 작업한 웹사이트 입니다.'}
+        {id: 6, title: 'HTML, CSS, JS, NodeJS', content: 'XD로 받은 디자인을 참고하여 NodeJS로 Page route를 설정하여 html, css, JS로 web & mobile을 작업한 웹사이트 입니다.'}
     ];
 
     return (
@@ -135,7 +151,7 @@ export default function resume() {
             <article className="my">
                 <img src={require('../image/00.png')}/>
                 <p>배움과 행복을 추구하는 삶을 살아가고 있습니다.</p>
-                <p>실패를 통해서 실패율을 줄이는 방법을 좋아합니다.</p>
+                <p>효율적인 방법을 찾아가는 것을 좋아합니다.</p>
                 <svg width="40" height="80" viewBox="0 0 42.52 92.934" id="box">
                         <g transform="translate(-959.646 -920.388)">
                             <path d="M980.834,949.844v91.436" transform="translate(0 -29.456)" fill="none" stroke="#707070" strokeWidth="1"/>
@@ -150,9 +166,13 @@ export default function resume() {
                         {contact.map(i =>
                             <li>
                                 <p className="title">{i.title}</p>
-                                <p>{i.content}</p>
+                                <p><span>{i.content}</span></p>
+                            </li>
+                        )}
+                        {contactTwo.map(i =>
+                            <li>
                                 <p className="m-none title">{i.mtitle}</p>
-                                <p className="m-none">{i.mcontent}</p>
+                                <p><span className="m-none">{i.mcontent}</span></p>
                             </li>
                         )}
                     </ul>
@@ -162,9 +182,10 @@ export default function resume() {
                 <h2># Education</h2>
                 <ul className="edu">
                     {education.map(i =>
-                            <li>
-                                <p>{i.edu}</p>
-                            </li>
+                        <li>
+                            <p className="title year">{i.yyyy}</p>
+                            <p>{i.edu}<span>{i.content}</span></p>
+                        </li>
                     )}
                 </ul>
             </article>
@@ -172,9 +193,10 @@ export default function resume() {
                 <h2># Work experience</h2>
                 <ul className="work">
                     {experience.map(i =>
-                            <li>
-                                <p>{i.work}</p>
-                            </li>
+                        <li>
+                            <p className="title">{i.yyyy}</p>
+                            <p>{i.work}</p>
+                        </li>
                     )}
                 </ul>
             </article>
@@ -183,7 +205,8 @@ export default function resume() {
                 <ul>
                     {skills.map(i =>
                             <li>
-                                <p>{i.skill}</p>
+                                <p className="title">{i.title}</p>
+                                <p><span>{i.skill}</span></p>
                             </li>
                     )}
                 </ul>
