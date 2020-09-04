@@ -7,7 +7,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="https://fe-p.github.io/">
       <Route path="/" component={App} />
     </BrowserRouter>
   </React.StrictMode>,
