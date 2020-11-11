@@ -100,22 +100,24 @@ export default function resume() {
     const experience = [
         {id: 1,  yyyy: '* 2012-2020', work: 'Graphic design'},
         {id: 2,  yyyy: '* 2015-2020', work: 'UI/UX design, Publising, front end'},
-        {id: 3,  yyyy: '# 2020-2020', work: 'Education Archiving Web/App'},
-        {id: 4,  yyyy: '# 2020-2020', work: 'AI Solution Responsive Web'},
-        {id: 5,  yyyy: '# 2020-2020', work: 'P2P investment SPA'},
-        {id: 6,  yyyy: '# 2017-2019', work: 'E-commerce site Web/App'},
-        {id: 7,  yyyy: '# 2015-2016', work: 'Trading Company responsive Web'},
-        {id: 8,  yyyy: '* 2017-2018', work: 'Exhibition Visualization'},
-        {id: 9,  yyyy: '* 2014-2018', work: 'Architectural Visualization'},
-        {id: 10, yyyy: '* 2012-2013', work: 'Knit design'}
+        {id: 3,  yyyy: '# 2020-2020', work: 'Startup event page Web'},
+        {id: 4,  yyyy: '# 2020-2020', work: 'Coupon event page mobile Web'},
+        {id: 5,  yyyy: '# 2020-2020', work: 'Education archiving Web/App'},
+        {id: 6,  yyyy: '# 2020-2020', work: 'AI Solution responsive Web'},
+        {id: 7,  yyyy: '# 2020-2020', work: 'P2P investment SPA'},
+        {id: 8,  yyyy: '# 2017-2019', work: 'E-commerce site Web/App'},
+        {id: 9,  yyyy: '# 2015-2016', work: 'Trading company responsive Web'},
+        {id: 10,  yyyy: '* 2017-2018', work: 'Exhibition visualization'},
+        {id: 11,  yyyy: '* 2014-2018', work: 'Architectural visualization'},
+        {id: 12, yyyy: '* 2012-2013', work: 'Knit design'}
     ];
 
     const skills = [
-        {id: 1, title: '* UI :', skill: 'Adobe XD, Figma, Sketch, Zplin'},
+        {id: 1, title: '* UI :', skill: 'Adobe XD, Figma, Sketch, Zeplin'},
         {id: 2, title: '* Graphic :', skill: 'Adobe Illustrator, Adobe Photoshop'},
         {id: 3, title: '* Motion :', skill: 'Adobe After Effect'},
-        {id: 4, title: '* 3D :', skill: 'Autodesk 3dsmax, Sketchup, Auto CAD, V-ray'},
-        {id: 5, title: '# Font-end :', skill: 'JS(ES6+), Jquery, ReactJS, CSS3, HTML5'},
+        {id: 4, title: '* 3D :', skill: 'Autodesk 3dsmax, Sketchup, AutoCAD, V-ray'},
+        {id: 5, title: '# Font-end :', skill: 'JS(ES6+), ReactJS, styled-components, CSS3, SCSS, HTML5'},
         {id: 6, title: '# Back-end :', skill: 'Java(Spring Boot), Nodejs(Express)'},
         {id: 7, title: '# DataBase :', skill: 'OracleSQL, MySQL'},
         {id: 8, title: '# Version :', skill: 'Github, Bitbuket'},
@@ -129,16 +131,18 @@ export default function resume() {
         {id: 4, title: 'Map Service UI', content: 'Figma로 Userflow와 UI를 제작하였습니다.'},
         {id: 5, title: 'Loan UI', content: 'Userflow기획을 바탕으로 UI를 제작하였습니다.'},
         {id: 6, title: 'Map floting UI', content: 'Adobe XD로 UX를 고려하여 UI를 제작하였습니다.'},
-        {id: 7, title: 'Re-Branding', content: '기존 App ui를 ReBranding 하였습니다.'}
+        {id: 7, title: 'Re-Branding', content: '기존 App ui를 ReBranding 하였습니다.'},
+        {id: 8, title: 'Startup event', content: 'Figma로 Graphic & UI 디자인을 제작하였습니다.'}
     ];
 
     const develop = [
-        {id: 1, title: 'ReactJS', content: 'Adobe XD를 사용하여 디자인하고, ReactJS로 만든 Responsive WebApp 입니다.'},
-        {id: 2, title: 'GatsbyJS', content: 'ReactJS와 Typescript, scss, GatsbyJS 정보 수집용 개인저장소 블로그 입니다.'},
-        {id: 3, title: 'Wordpress theme', content: 'Photoshop, illustrator를 사용하여 디자인하고 Wordpress와 bootstrap으로 만든 company 웹사이트 입니다.'},
-        {id: 4, title: 'Wordpress Custom CSS', content: 'Figma로 받은 디자인을 참고하여 Wordpress를 custom css로 제작한 company 웹사이트 입니다.'},
-        {id: 5, title: 'Cafe24', content: 'Photoshop, illustrator를 사용하여 디자인하고 cafe24에 html, css을 작업한 Shopping Mall 입니다.'},
-        {id: 6, title: 'HTML, CSS, JS, NodeJS', content: 'XD로 받은 디자인을 참고하여 NodeJS로 Page route를 설정하여 html, css, JS로 web & mobile을 작업한 웹사이트 입니다.'}
+        {id: 1, title: 'P2P investment', content: 'Adobe XD를 사용하여 디자인하고, ReactJS로 만든 Responsive WebApp 입니다.'},
+        {id: 2, title: 'GatsbyJS Blog', content: 'ReactJS와 Typescript, scss, GatsbyJS 정보 수집용 개인저장소 블로그 입니다.'},
+        {id: 3, title: 'Trading company responsive Web', content: 'Photoshop, illustrator를 사용하여 디자인하고 Wordpress와 bootstrap으로 만든 company 웹사이트 입니다.'},
+        {id: 4, title: 'AI Solution responsive Web', content: 'Figma로 받은 디자인을 참고하여 Wordpress를 custom css로 제작한 company 웹사이트 입니다.'},
+        {id: 5, title: 'Cafe24 E-commerce site', content: 'Photoshop, illustrator를 사용하여 디자인하고 cafe24에 html, css을 작업한 Shopping Mall 입니다.'},
+        {id: 6, title: 'Education archiving', content: 'XD로 받은 디자인을 참고하여 NodeJS로 Page route를 설정하여 html, css, JS로 web & mobile을 작업한 웹사이트 입니다.'},
+        {id: 7, title: 'Coupon event', content: 'Figma로 Graphic & UI 디자인하고 html, scss, js로 작업한 이벤트 페이지 입니다.'}
     ];
 
     return (
@@ -226,7 +230,7 @@ export default function resume() {
                 <br/>
                 </div>
                 <div className="inner">
-                <h2># Web Design & Publising</h2>
+                <h2># Design & Front end</h2>
                   <ul>
                     {develop.map(i =>
                         <li>
