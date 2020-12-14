@@ -96,7 +96,6 @@ export default function resume() {
         {id: 3, yyyy: '* 2014-2014', edu: 'Architecture Construction practice', content: '(CAD, 3D visualization)'},
         {id: 4, yyyy: '* 2012-2012', edu: 'Fashion Design', content: '(Pattern drawing, Cloth foundation, Sewing)'}
     ];
-
     const experience = [
         {id: 1,  yyyy: '* 2012-2020', work: 'Graphic design'},
         {id: 2,  yyyy: '* 2015-2020', work: 'UI/UX design, Publising, front end'},
@@ -111,38 +110,37 @@ export default function resume() {
         {id: 11,  yyyy: '* 2014-2018', work: 'Architectural visualization'},
         {id: 12, yyyy: '* 2012-2013', work: 'Knit design'}
     ];
-
     const skills = [
         {id: 1, title: '* UI :', skill: 'Adobe XD, Figma, Sketch, Zeplin'},
         {id: 2, title: '* Graphic :', skill: 'Adobe Illustrator, Adobe Photoshop'},
         {id: 3, title: '* Motion :', skill: 'Adobe After Effect'},
         {id: 4, title: '* 3D :', skill: 'Autodesk 3dsmax, Sketchup, AutoCAD, V-ray'},
-        {id: 5, title: '# Font-end :', skill: 'JS(ES6+), ReactJS, styled-components, CSS3, SCSS, HTML5'},
-        {id: 6, title: '# Back-end :', skill: 'Java(Spring Boot), Nodejs(Express)'},
-        {id: 7, title: '# DataBase :', skill: 'OracleSQL, MySQL'},
-        {id: 8, title: '# Version :', skill: 'Github, Bitbuket'},
-        {id: 9, title: '# Cloud:', skill: 'AWS, GCP'}
+        {id: 5, title: '# Font-end :', skill: 'HTML5, CSS3, SCSS, JS(ES6+), ReactJS'},
+        {id: 6, title: '# Version :', skill: 'Github, Bitbuket'},
+        // {id: 6, title: '# Back-end :', skill: 'Java(Spring Boot), Nodejs(Express)'}, // 스택을 전부 보여줄 필요가 있을까. 숨겨둬야징
+        // {id: 7, title: '# DataBase :', skill: 'OracleSQL, MySQL'},
+        // {id: 9, title: '# Cloud:', skill: 'AWS, GCP'}
     ];
-
     const design = [
-        {id: 1, title: 'Behance', content: '디테일한 그래픽 디자인 작업으로 구성되어 있습니다.'},
-        {id: 2, title: 'Dribbble', content: 'UI 그래픽 위주 개인작업으로 구성되어 있습니다.'},
-        {id: 3, title: 'Graphic Design Portfolio', content: 'Private을 제외한 디자인 일부만 과정 없이 결과로 구성하였습니다.'},
-        {id: 4, title: 'Map Service UI', content: 'Figma로 Userflow와 UI를 제작하였습니다.'},
-        {id: 5, title: 'Loan UI', content: 'Userflow기획을 바탕으로 UI를 제작하였습니다.'},
-        {id: 6, title: 'Map floting UI', content: 'Adobe XD로 UX를 고려하여 UI를 제작하였습니다.'},
-        {id: 7, title: 'Re-Branding', content: '기존 App ui를 ReBranding 하였습니다.'},
-        {id: 8, title: 'Startup event', content: 'Figma로 Graphic & UI 디자인을 제작하였습니다.'}
+        {id: 1, title: '* Behance' },
+        {id: 2, title: '* Dribbble'},
+        {id: 3, title: '* Graphic design collection'},
+        {id: 4, title: '* Map service floting UI'},
+        {id: 5, title: '* Psychological Counseling UI'},
+        {id: 6, title: '* Startup festa event'},
+        {id: 7, title: '* Re-Branding'},
+        {id: 8, title: '* Loan UI'},
     ];
 
     const develop = [
-        {id: 1, title: 'P2P investment', content: 'Adobe XD를 사용하여 디자인하고, ReactJS로 만든 Responsive WebApp 입니다.'},
-        {id: 2, title: 'GatsbyJS Blog', content: 'ReactJS와 Typescript, scss, GatsbyJS 정보 수집용 개인저장소 블로그 입니다.'},
-        {id: 3, title: 'Trading company responsive Web', content: 'Photoshop, illustrator를 사용하여 디자인하고 Wordpress와 bootstrap으로 만든 company 웹사이트 입니다.'},
-        {id: 4, title: 'AI Solution responsive Web', content: 'Figma로 받은 디자인을 참고하여 Wordpress를 custom css로 제작한 company 웹사이트 입니다.'},
-        {id: 5, title: 'Cafe24 E-commerce site', content: 'Photoshop, illustrator를 사용하여 디자인하고 cafe24에 html, css을 작업한 Shopping Mall 입니다.'},
-        {id: 6, title: 'Education archiving', content: 'XD로 받은 디자인을 참고하여 NodeJS로 Page route를 설정하여 html, css, JS로 web & mobile을 작업한 웹사이트 입니다.'},
-        {id: 7, title: 'Coupon event', content: 'Figma로 Graphic & UI 디자인하고 html, scss, js로 작업한 이벤트 페이지 입니다.'}
+        {id: 1, title: '# P2P investment'},
+        {id: 2, title: '# GatsbyJS Blog'},
+        {id: 3, title: '# Trading company responsive Web'},
+        {id: 4, title: '# AI Solution responsive Web'},
+        {id: 5, title: '# Cafe24 e-commerce site'},
+        {id: 6, title: '# Education archiving'},
+        {id: 7, title: '# Coupon event'},
+        {id: 8, title: '# Education type analysis'},
     ];
 
     return (
@@ -225,7 +223,7 @@ export default function resume() {
                             <p className="m-none">{i.content}</p>
                         </li>
                     )}
-                    <li><a href="https://j.mp/2XwtlH3" target="blank" alt="portfolio" style={{color: "#E37007", marginTop: "20px"}}>※ Link는 권한 요청하시면 오픈 가능합니다.</a></li>
+                    {/* <li><a href="https://j.mp/2XwtlH3" target="blank" alt="portfolio" style={{color: "#E37007", marginTop: "20px"}}>※ Link는 권한 요청하시면 오픈 가능합니다.</a></li> */}
                   </ul>
                 <br/>
                 </div>
