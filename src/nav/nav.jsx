@@ -119,7 +119,7 @@ export default function nav() {
               <Section>
                 <Area>
                   <p className="h2 gsap" ref={el => {TweenMax.to(el, .4, {opacity: 1, y: -60, ease: Expo.easeOut, delay: .4 })}}>
-                    <a href="https://j.mp/2XwtlH3" target="blank" alt="private">Graphic & UI/UX</a>
+                    <a href="#" target="blank" alt="private">Graphic & UI/UX</a>
                     <svg className="drawing pen" width="594.822" height="83" viewBox="0 0 594.822 83">
                       <g transform="translate(-368 -286)">
                         <g transform="translate(372 291)" fill="none" stroke="#707070" strokeWidth="1">
@@ -156,7 +156,7 @@ export default function nav() {
               <Section>
                 <Area>
                   <p className="h3 gsap" ref={el => {TweenMax.to(el, .5, {opacity: 1, y: -60, ease: Expo.easeOut, delay: .5 })}}>
-                    <a href="https://j.mp/2XwtlH3" target="blank" alt="private">Responsive Web App</a>
+                    <a href="#" target="blank" alt="private">Responsive Web App</a>
                     <svg className="drawing code" width="338" height="63" viewBox="0 0 338 63">
                       <text transform="translate(169 49)" fill="#707070" fontSize="51"><tspan x="-168.3" y="0"> {} [] () &lt;&gt; </tspan></text>
                   </svg>
