@@ -19,7 +19,7 @@ width: 100%;
 .scrollingBanner div h2:hover a {color: #000;}
 .scrollingBanner div:nth-child(1) h2:hover a {-webkit-text-stroke: 1px; -webkit-text-stroke-color: #000; -webkit-text-fill-color: transparent; left: 100%;}
 
-.left {background: none; -webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg);
+.left {background: none; transform: rotate(-90deg); -moz-transform: rotate(-90deg); -ms-transform: rotate(-90deg); -o-transform: rotate(-90deg);
  color: #bbb; text-align : right; font-size: 1rem; position: absolute; top: 280px; left: -200px; z-index: 2;}
 .left:hover {opacity: .8;}
 
@@ -61,16 +61,16 @@ export default function main() {
                     </Link>
                     <Link to={"/nav"}>
                       <div className="right">
-                        <p>2012-2020</p>
+                        <p>2012-2021</p>
                         <span></span>
                       </div>
                     </Link>
                     <section className="scrollingBanner">
                       <div>
-                        <h2><Link to={"/nav"}>Interaction designer & Front-end developer.</Link></h2>
+                        <h2><Link to={"/nav"}>Designer & Front-end developer.</Link></h2>
                       </div>
                       <div>
-                        <h2><Link to={"/nav"}>Interaction designer & Front-end developer.</Link></h2>
+                        <h2><Link to={"/nav"}>Designer & Front-end developer.</Link></h2>
                       </div>
                     </section>
                   </Wrap>
