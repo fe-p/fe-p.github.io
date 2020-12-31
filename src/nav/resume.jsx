@@ -88,7 +88,7 @@ export default function resume() {
     const contactTwo = [
         {id: 1, mtitle: '* Address　:', mcontent: 'Nakseongdae, Gwanak-gu, Seoul, Republic of Korea'},
         {id: 2, mtitle: '* Interest :', mcontent: 'Collection of design references'},
-        {id: 3, mtitle: '* Language :', mcontent: 'Korean, English, Javascript'}
+        {id: 3, mtitle: '* Language :', mcontent: 'Korean, English'}
     ];
     const education = [
         {id: 1, yyyy: '* 2013-2020', edu: 'University', content: '(Dept. of Design)'},
@@ -97,18 +97,12 @@ export default function resume() {
         {id: 4, yyyy: '* 2012-2012', edu: 'Fashion Design', content: '(Pattern drawing, Cloth foundation, Sewing)'}
     ];
     const experience = [
-        {id: 1,  yyyy: '* 2012-2020', work: 'Graphic design'},
-        {id: 2,  yyyy: '* 2015-2020', work: 'UI/UX design, Publising, front end'},
-        {id: 3,  yyyy: '# 2020-2020', work: 'Startup event page Web'},
-        {id: 4,  yyyy: '# 2020-2020', work: 'Coupon event page mobile Web'},
-        {id: 5,  yyyy: '# 2020-2020', work: 'Education archiving Web/App'},
-        {id: 6,  yyyy: '# 2020-2020', work: 'AI Solution responsive Web'},
-        {id: 7,  yyyy: '# 2020-2020', work: 'P2P investment SPA'},
-        {id: 8,  yyyy: '# 2017-2019', work: 'E-commerce site Web/App'},
-        {id: 9,  yyyy: '# 2015-2016', work: 'Trading company responsive Web'},
-        {id: 10,  yyyy: '* 2017-2018', work: 'Exhibition visualization'},
-        {id: 11,  yyyy: '* 2014-2018', work: 'Architectural visualization'},
-        {id: 12, yyyy: '* 2012-2013', work: 'Knit design'}
+        {id: 1, yyyy: '# 2017-2021', work: 'FutureClassifier (Design & FE)'},
+        {id: 2, yyyy: '# 2017-2019', work: 'E-commerce (Design & FE)'},
+        {id: 3, yyyy: '# 2015-2016', work: 'Trading (Design & FE)'},
+        {id: 8, yyyy: '* 2017-2018', work: 'Exhibition visualization (Design)'},
+        {id: 9, yyyy: '* 2014-2018', work: 'Architectural visualization (Design)'},
+        {id: 10,yyyy: '* 2012-2013', work: 'Knit design (Design)'}
     ];
     const skills = [
         {id: 1, title: '* UI :', skill: 'Adobe XD, Figma, Sketch, Zeplin'},
@@ -117,9 +111,6 @@ export default function resume() {
         {id: 4, title: '* 3D :', skill: 'Autodesk 3dsmax, Sketchup, AutoCAD, V-ray'},
         {id: 5, title: '# Font-end :', skill: 'HTML5, CSS3, SCSS, JS(ES6+), ReactJS'},
         {id: 6, title: '# Version :', skill: 'Github, Bitbuket'},
-        // {id: 6, title: '# Back-end :', skill: 'Java(Spring Boot), Nodejs(Express)'}, // 스택을 전부 보여줄 필요가 있을까. 숨겨둬야징
-        // {id: 7, title: '# DataBase :', skill: 'OracleSQL, MySQL'},
-        // {id: 9, title: '# Cloud:', skill: 'AWS, GCP'}
     ];
     const design = [
         {id: 1, title: '* Behance' },
@@ -219,20 +210,19 @@ export default function resume() {
                   <ul>
                     {design.map(i =>
                         <li>
-                            <a href="https://j.mp/2XwtlH3" target="blank" alt="portfolio" className="title">{i.title}</a>
+                            <a href="#" target="blank" alt="portfolio" className="title">{i.title}</a>
                             <p className="m-none">{i.content}</p>
                         </li>
                     )}
-                    {/* <li><a href="https://j.mp/2XwtlH3" target="blank" alt="portfolio" style={{color: "#E37007", marginTop: "20px"}}>※ Link는 권한 요청하시면 오픈 가능합니다.</a></li> */}
                   </ul>
                 <br/>
                 </div>
                 <div className="inner">
-                <h2># Design & Front end</h2>
+                <h2># Design & FE dev</h2>
                   <ul>
                     {develop.map(i =>
                         <li>
-                            <a href="https://j.mp/2XwtlH3" target="blank" alt="portfolio" className="title">{i.title}</a>
+                            <a href="#" target="blank" alt="portfolio" className="title">{i.title}</a>
                             <p className="m-none">{i.content}</p>
                         </li>
                     )}
