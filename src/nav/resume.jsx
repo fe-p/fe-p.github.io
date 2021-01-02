@@ -99,7 +99,7 @@ export default function resume() {
     const experience = [
         {id: 1, yyyy: '# 2017-2021', work: 'FutureClassifier (Design & FE)'},
         {id: 2, yyyy: '# 2017-2019', work: 'E-commerce (Design & FE)'},
-        {id: 3, yyyy: '# 2015-2016', work: 'Trading (Design & FE)'},
+        {id: 3, yyyy: '# 2015-2016', work: 'Hardware Trade (Design & FE)'},
         {id: 8, yyyy: '* 2017-2018', work: 'Exhibition visualization (Design)'},
         {id: 9, yyyy: '* 2014-2018', work: 'Architectural visualization (Design)'},
         {id: 10,yyyy: '* 2012-2013', work: 'Knit design (Design)'}
